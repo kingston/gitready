@@ -33,12 +33,14 @@ fi
 
 if [ ! -d "$USER_HOME/.ssh" ]; then
     mkdir $USER_HOME/.ssh
+    chown ${SUDO_USER} $USER_HOME/.ssh
 fi
 
 if [ ! -f "$USER_HOME/.ssh/id_rsa" ]; then
     echo "Setting up SSH keys..."
     read -p "Please enter the email address to associate with it: " email
     ssh-keygen -t rsa -C $email -f $USER_HOME/.ssh/id_rsa
+    chown -R ${SUDO_USER} $USER_HOME/.ssh
     echo "SSH keys generated!"
 else
     echo "SSH keys found, skipping step!"
