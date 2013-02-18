@@ -44,7 +44,9 @@ echo "Installing git..."
 
 sudo $pm -y install git-core
 
-echo "done!\n\n"
+echo "done!"
+echo ""
+echo ""
 
 echo "Go to https://github.com/settings/ssh and add the following key:"
 
