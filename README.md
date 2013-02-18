@@ -9,10 +9,6 @@ Linux
 -----
 `wget https://raw.github.com/kingston/gitready/master/gitready.sh && bash gitready.sh`
 
-OS X
-----
-`curl -O https://raw.github.com/kingston/gitready/master/gitready.sh && bash gitready.sh`
-
 What does it do?
 ----------------
 
