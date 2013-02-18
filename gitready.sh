@@ -31,6 +31,10 @@ else
   pm="apt-get"
 fi
 
+if [ ! -d "$USER_HOME/.ssh" ]; then
+    mkdir $USER_HOME/.ssh
+fi
+
 if [ ! -f "$USER_HOME/.ssh/id_rsa" ]; then
     echo "Setting up SSH keys..."
     read -p "Please enter the email address to associate with it: " email
