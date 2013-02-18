@@ -7,7 +7,7 @@ A one-line setup script to get it github ready
 
 Linux
 -----
-`wget https://raw.github.com/kingston/gitready/master/gitready.sh && bash gitready.sh`
+`wget https://raw.github.com/kingston/gitready/master/gitready.sh && sudo bash gitready.sh`
 
 What does it do?
 ----------------
